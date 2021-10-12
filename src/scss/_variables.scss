@@ -1,0 +1,11 @@
+$color-font--dark: #333;
+$color-font--bright: #ccc;
+
+$color-background--dark: #3A4A3D;
+$color-background--bright: #96AD90;
+$color-background--dark--hover: darken($color-background--dark, 7%);
+$color-background--bright--hover: darken($color-background--bright, 7%);
+
+// $color-icon: ;
+
+$border-radius: 10px;
