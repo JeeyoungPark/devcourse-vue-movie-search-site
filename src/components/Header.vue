@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1>영화 검색 사이트</h1>
+    <h1 @click="initialize">영화 검색 사이트</h1>
     <input
       placeholder="영화 제목을 입력하세요."
       :value="input"
@@ -17,6 +17,13 @@ export default {
     }
   },
   methods: {
+    initialize () {
+      this.$router.push('/');
+      this.$store.commit('content/assignState', {
+        input: '',
+        contents: [],
+      });
+    },
     readContents (e) {
       this.$store.dispatch('content/readContents', e.target.value);
     }
@@ -30,16 +37,16 @@ export default {
 }
 header {
   width: 100%;
-  /* height: 120px; */
-  padding: 14px 20px;
-  background-color: $color-background--bright;
+  height: 120px;
+  padding: 14px 160px;
+  background-color: $color-background--dark;
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   align-items: center;
   h1 {
     justify-items: center;
     font-size: 1.6rem;
-    color: $color-font--dark;
+    color: $color-font;
     padding-right: 20px;
     &:hover {
       cursor: pointer;
@@ -47,7 +54,7 @@ header {
   }
   input {
     width: 500px;
-    height: 40px;
+    height: 50px;
     border: 4px solid $color-background--dark;
     border-radius: $border-radius;
   }

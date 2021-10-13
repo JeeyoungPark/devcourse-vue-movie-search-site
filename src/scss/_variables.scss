@@ -1,11 +1,13 @@
 $color-font--dark: #333;
-$color-font--bright: #ccc;
+$color-font: #ccc;
 
-$color-background--dark: #3A4A3D;
-$color-background--bright: #96AD90;
-$color-background--dark--hover: darken($color-background--dark, 7%);
+// $color-background--dark: #3A4A3D;
+$color-background--dark: #0d0d11;
+// $color-background--bright: #96AD90;
+$color-background--bright: #15151b;
+$color-background--dark--hover: lighten($color-background--dark, 20%);
 $color-background--bright--hover: darken($color-background--bright, 7%);
-
+// #75E6DA
 // $color-icon: ;
 
 $border-radius: 10px;
