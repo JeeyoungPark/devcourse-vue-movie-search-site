@@ -7,7 +7,7 @@
     "dev": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "homepage" : "https://JeeyoungPark.github.io/programmers-vue-movie-search-site/",
   "keywords": [],
