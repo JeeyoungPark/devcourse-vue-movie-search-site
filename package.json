@@ -9,9 +9,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  {
-    "homepage" : "https://JeeyoungPark.github.io/programmers-vue-movie-search-site/"
-  },
+  "homepage" : "https://JeeyoungPark.github.io/programmers-vue-movie-search-site/",
   "keywords": [],
   "author": "",
   "license": "ISC",
