@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  {
+    "homepage" : "https://JeeyoungPark.github.io/programmers-vue-movie-search-site/"
   },
   "keywords": [],
   "author": "",
@@ -38,6 +43,7 @@
     "webpack-dev-server": "^4.3.1"
   },
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "vue": "^3.2.20",
     "vue-router": "^4.0.11",
     "vuex": "^4.0.2"
